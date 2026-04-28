@@ -9,11 +9,11 @@ Um parágrafo: o que esse módulo resolve, para quem, qual o "trabalho a ser fei
 
 ## 2. Personas e permissões
 
-Quem usa esse módulo e que permissões cada perfil tem. Linkar [`../02-domain/permissions-matrix.md`](../../02-domain/permissions-matrix.md).
+Quem usa esse módulo e que permissões cada perfil tem. Linkar [`../02-domain/permissions-matrix.md`](../02-domain/permissions-matrix.md).
 
 ## 3. Glossário do módulo
 
-Termos específicos. Linkar para [`../02-domain/glossary.md`](../../02-domain/glossary.md) se já existir.
+Termos específicos. Linkar para [`../02-domain/glossary.md`](../02-domain/glossary.md) se já existir.
 
 ## 4. Sitemap
 
@@ -28,7 +28,7 @@ flowchart LR
 
 ## 5. Entidades principais
 
-ERD parcial (apenas o que é desse módulo). Linkar para [`../02-domain/erd.md`](../../02-domain/erd.md).
+ERD parcial (apenas o que é desse módulo). Linkar para [`../02-domain/erd.md`](../02-domain/erd.md).
 
 ## 6. State machines
 
