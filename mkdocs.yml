@@ -1,0 +1,139 @@
+site_name: Seven Qualyteam Docs
+site_description: Documentação técnica do SGQ/SGA da Seven Resíduos
+site_author: ArcaGrowth1
+site_url: https://arcagrowth1.github.io/seven-qualyteam-docs/
+repo_name: ArcaGrowth1/seven-qualyteam-docs
+repo_url: https://github.com/ArcaGrowth1/seven-qualyteam-docs
+edit_uri: edit/main/
+
+docs_dir: docs
+
+theme:
+  name: material
+  language: pt-BR
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - pt
+        - en
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Início: index.md
+  - Visão geral: 00-overview.md
+  - Arquitetura:
+      - Contexto do sistema: 01-architecture/system-context.md
+      - Containers: 01-architecture/container-diagram.md
+      - Stack técnica: 01-architecture/tech-stack.md
+      - Infraestrutura: 01-architecture/infrastructure.md
+  - Domínio:
+      - Glossário: 02-domain/glossary.md
+      - Modelo de dados (ERD): 02-domain/erd.md
+      - Permissões: 02-domain/permissions-matrix.md
+      - Multi-tenancy: 02-domain/multi-tenancy.md
+  - Módulos:
+      - Template: 03-modules/_template.md
+      - Administrador: 03-modules/admin/overview.md
+      - Documentos: 03-modules/documents/overview.md
+      - Não Conformidades: 03-modules/nonconformities/overview.md
+      - Oportunidades: 03-modules/opportunities/overview.md
+      - Riscos: 03-modules/risks/overview.md
+  - Cross-cutting:
+      - Autenticação: 04-cross-cutting/auth.md
+      - Audit Log: 04-cross-cutting/audit-log.md
+      - Notificações: 04-cross-cutting/notifications.md
+      - Storage de arquivos: 04-cross-cutting/file-storage.md
+      - i18n: 04-cross-cutting/i18n.md
+  - Design System:
+      - Componentes: 05-design-system/components.md
+      - Patterns: 05-design-system/patterns.md
+      - Tokens: 05-design-system/tokens.md
+  - Roadmap:
+      - MVP: 06-roadmap/mvp.md
+      - Fase 2: 06-roadmap/phase-2.md
+      - ADRs:
+          - Template: 06-roadmap/adrs/_template.md
+          - "0001 — Multi-tenancy": 06-roadmap/adrs/0001-multi-tenancy.md
+          - "0002 — Monolith vs Microservices": 06-roadmap/adrs/0002-monolith-vs-microservices.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ArcaGrowth1/seven-qualyteam-docs
