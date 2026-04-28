@@ -1,0 +1,12 @@
+# Default — todos da org revisam
+* @ArcaGrowth1
+
+# Docs por módulo (preencher quando time crescer)
+# /docs/03-modules/admin/        @ArcaGrowth1
+# /docs/03-modules/documents/    @ArcaGrowth1
+# /docs/03-modules/nonconformities/  @ArcaGrowth1
+# /docs/03-modules/opportunities/    @ArcaGrowth1
+# /docs/03-modules/risks/        @ArcaGrowth1
+
+# ADRs precisam de revisão de tech lead
+/docs/06-roadmap/adrs/  @ArcaGrowth1
