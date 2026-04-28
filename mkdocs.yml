@@ -97,7 +97,58 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - Visão geral: 00-overview.md
+  - Manual Funcional:
+      - Visão geral: manual/index.md
+      - Conceitos básicos:
+          - Navegação geral: manual/0-conceitos/navegacao-geral.md
+          - Listas (Consulta, Tarefas): manual/0-conceitos/lista-mestra.md
+          - Filtros — o que filtram: manual/0-conceitos/filtros.md
+          - Wizards (cadastros multi-passo): manual/0-conceitos/wizards.md
+          - Anexar arquivos: manual/0-conceitos/anexos.md
+          - Notificações (sino, e-mail): manual/0-conceitos/notificacoes.md
+          - Busca global: manual/0-conceitos/busca.md
+          - Permissões na prática: manual/0-conceitos/permissoes-na-pratica.md
+      - Administrador:
+          - Visão geral: manual/1-administrador/visao-geral.md
+          - Processos: manual/1-administrador/processos.md
+          - Unidades organizacionais: manual/1-administrador/unidades.md
+          - Grupos de permissões: manual/1-administrador/grupos-permissoes.md
+          - Campos personalizados: manual/1-administrador/campos-personalizados.md
+          - Usuários: manual/1-administrador/usuarios.md
+          - Registros de atividades: manual/1-administrador/audit-log.md
+      - Documentos:
+          - Visão geral: manual/2-documentos/visao-geral.md
+          - Dashboard: manual/2-documentos/dashboard.md
+          - Tarefas — Elaboração: manual/2-documentos/tarefas-elaboracao.md
+          - Tarefas — Solicitação: manual/2-documentos/tarefas-solicitacao.md
+          - Tarefas — Validade: manual/2-documentos/tarefas-validade.md
+          - Cadastrar documento interno: manual/2-documentos/novo-documento-interno.md
+          - Cadastrar documento externo: manual/2-documentos/novo-documento-externo.md
+          - Consulta (lista mestra): manual/2-documentos/consulta.md
+          - Detalhe do documento: manual/2-documentos/detalhe-documento.md
+          - Controle de leitura obrigatória: manual/2-documentos/leitura-obrigatoria.md
+      - Não Conformidades:
+          - Visão geral: manual/3-nao-conformidades/visao-geral.md
+          - Dashboard: manual/3-nao-conformidades/dashboard.md
+          - Tarefas (6 abas): manual/3-nao-conformidades/tarefas.md
+          - Registrar ocorrência: manual/3-nao-conformidades/registrar-ocorrencia.md
+          - Registrar não conformidade (RNC): manual/3-nao-conformidades/registrar-rnc.md
+          - Consulta: manual/3-nao-conformidades/consulta.md
+          - Configuração do módulo: manual/3-nao-conformidades/configuracao.md
+      - Oportunidades:
+          - Visão geral: manual/4-oportunidades/visao-geral.md
+          - Configuração inicial (matriz): manual/4-oportunidades/configuracao-inicial.md
+          - Nova oportunidade: manual/4-oportunidades/nova-oportunidade.md
+          - Tarefas e Consulta: manual/4-oportunidades/tarefas-e-consulta.md
+      - Riscos:
+          - Visão geral: manual/5-riscos/visao-geral.md
+          - Configurar unidade: manual/5-riscos/configurar-unidade.md
+          - Identificar risco: manual/5-riscos/identificar-risco.md
+          - Dashboard, Tarefas e Consulta: manual/5-riscos/dashboard-tarefas-consulta.md
+      - Fluxos completos:
+          - Visão geral: manual/6-fluxos-completos/index.md
+          - Implantação Seven (do zero): manual/6-fluxos-completos/implantacao-seven.md
+  - Visão técnica: 00-overview.md
   - Arquitetura:
       - Contexto do sistema: 01-architecture/system-context.md
       - Containers: 01-architecture/container-diagram.md
@@ -108,7 +159,7 @@ nav:
       - Modelo de dados (ERD): 02-domain/erd.md
       - Permissões: 02-domain/permissions-matrix.md
       - Multi-tenancy: 02-domain/multi-tenancy.md
-  - Módulos:
+  - Módulos (técnico):
       - Template: 03-modules/_template.md
       - Administrador: 03-modules/admin/overview.md
       - Documentos: 03-modules/documents/overview.md
